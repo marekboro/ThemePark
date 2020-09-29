@@ -78,6 +78,16 @@ public class ThemeParkTest {
         assertEquals(5,themePark.getAllAllowedFor(visitor3).size());
         assertEquals(6,themePark.getAllAllowedFor(visitor4).size());
     }
+    @Test
+    public void visitingAddsToVisitorsArrayOfVisited(){
+         themePark.visit(visitor2,dodgems);
+        assertEquals(1,visitor2.getVisitedAttractions().size());
+        assertEquals("The Italian Job",visitor2.getVisitedAttractions().get(0).getName());
+
+
+
+    }
+
 
 
 

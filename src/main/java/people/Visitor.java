@@ -30,6 +30,10 @@ public class Visitor {
         return money;
     }
 
+    public ArrayList<Attraction> getVisitedAttractions() {
+        return visitedAttractions;
+    }
+
     public void addToAttractions(Attraction attraction){
         this.visitedAttractions.add(attraction);
     }
